@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  background-image: url('img/bazinha.png');
+  background-image: url('img/bazinha.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #191D1E;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px 60px 0px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10vh 30px;
+  background: #5094B1;
+}
+
+.container-text {
+  height: 100%;
+  width: 400px;
+  background: #E4391D;
+  border: none;
+  border-radius: 18px;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #D0E2E5;
+}
+
+p {
+  font-size: 16px;
+  color: #D0E2E5;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.yourPoint span {
+  color: blue;
+}
+
+.sheldonPoint span {
+  color: red;
+}
+
+.container-jokenpo {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  margin: 30px 0px;
+  display: flex;
+  gap: 40px;
+}
+
+button {
+  padding: 10px;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+#rock {
+  background-color: #983821;
+}
+
+#paper {
+  background-color: #f62fff;
+}
+
+#scissors {
+  background-color: #fff546ff;
+}
+
+#spock {
+  background-color: #f6546fff;
+}
+
+#lizard {
+  background-color: #f5f6ff;
+}

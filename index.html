@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=M+PLUS+1p:wght@300;400&family=Noto+Sans:wght@300;400;500&family=Raleway:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bazinga</title>
+  </head>
+  
+  <body>
+    <h1>Bem-Vindo ao jogo de The Big Bang Theory</h1>
+    <div class="container">
+      <div class="container-text">
+        <h2>Regras do jogo</h2>
+        <p>
+          Pedra vence tesoura, é vencida por papel, vence lagarto, não é afetado
+          por Spock papel vence pedra, é vencida por tesoura, vence lagarto, é
+          desaprovado por Spock tesoura vence papel, é vencida por pedra, vence
+          lagarto, é quebrado por Spock lagarto vence papel, é envenenado por
+          Spock, é esmagado por pedra, é decapitado por tesoura Spock vence
+          pedra, vence tesoura, é desaprovado por papel, envenena lagarto Essas
+          são as interações essenciais do jogo "Pedra, Papel, Tesoura, Lagarto,
+          Spock". Cada elemento possui relações específicas com os outros,
+          determinando o vencedor em cada confronto.
+        </p>
+      </div>
+      <div class="video">
+        <iframe
+          width="660"
+          height="415"
+          src="https://www.youtube.com/embed/7QiiFEbGYnQ?si=bd0G7CshkxGU0dC5"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <main>
+      <div class="container-jokenpo">
+        <h3>JokenPô</h3>
+  
+        <div class="button">
+          <button id="rock" onclick="playHuman('rock')">&#x1F44A</button>
+          <button id="paper" onclick="playHuman('paper')">&#x1F590</button>
+          <button id="scissors"onclick="playHuman('scissors')">&#x270C</button>
+          <button id="spock" onclick="playHuman('spock')">&#x1F596</button>
+          <button id="lizard" onclick="playHuman('lizard')">&#x1F98E</button>
+        </div>
+
+        <p class="result"></p>
+
+        <p class="yourPoint" >Sua Pontuação : <span id="youScore">0</span> </p>
+        <p class="sheldonPoint" >Pontuação do Sheldon : <span id="sheldonScore">0</span> </p>
+
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
